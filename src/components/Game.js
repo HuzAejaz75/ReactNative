@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Buttons from './Buttons';
 import {
     Platform,
     StyleSheet,
@@ -27,9 +28,7 @@ target = this.randomNumbers.slice(0,this.props.randomNumberCount-2).reduce((acc,
             </Text>
             {this.randomNumbers.map((val, index)=>
                
-                <Text  key = {index} style = {styles.keys}>
-                     {val}
-                </Text>
+                <Buttons key={index} number ={val}></Buttons>
             )}
     </View>
 
@@ -50,13 +49,6 @@ const styles = StyleSheet.create({
        fontSize: 40,
        backgroundColor: '#ddf',
        textAlign: 'center'
-   },
-   keys:{
-    fontSize: 40,
-    backgroundColor: '#ddd',
-    marginLeft: 10,
-    marginHorizontal: 10,
-    marginTop:10,
    }
 });
  export default Game;
