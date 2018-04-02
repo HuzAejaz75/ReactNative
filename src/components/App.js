@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import Game from './Game';
 import AForm from './AForm';
+import TabBar from './TabBar'
 //import AnotherButton from './AnotherButton';
 //import Flexbox from './Flexbox';
 //import Pizza from './Pizza'
@@ -18,7 +19,7 @@ import { AppRegistry, Text, View } from 'react-native';
     console.log('hey console...');
     return (
       <View style={{backgroundColor:'#B9CCD5'}}>
-       <AForm/>
+      <TabBar/>
     </View>
     );
   }
