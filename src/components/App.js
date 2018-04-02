@@ -6,9 +6,10 @@
 
 import React, { Component } from 'react';
 import Game from './Game';
-import AnotherButton from './AnotherButton';
-import Flexbox from './Flexbox';
-import Pizza from './Pizza'
+import AForm from './AForm';
+//import AnotherButton from './AnotherButton';
+//import Flexbox from './Flexbox';
+//import Pizza from './Pizza'
 import { AppRegistry, Text, View } from 'react-native';
 
 
@@ -16,9 +17,8 @@ import { AppRegistry, Text, View } from 'react-native';
   render() {
     console.log('hey console...');
     return (
-      <View style={{backgroundColor:'#1fa38f'}}>
-        <Flexbox/>
-        <Pizza/>
+      <View style={{backgroundColor:'#B9CCD5'}}>
+       <AForm/>
     </View>
     );
   }

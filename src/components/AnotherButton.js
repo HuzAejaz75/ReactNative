@@ -23,7 +23,7 @@ import { AppRegistry, Text, View ,StyleSheet} from 'react-native';
                {front}
                <Text>
                   
-                </Text>
+               </Text>
             </View> 
         );
     }
