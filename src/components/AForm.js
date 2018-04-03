@@ -10,7 +10,8 @@ import {
     StatusBar,
     Slider,
     ProgressViewIOS,
-    DatePickerIOS
+    DatePickerIOS,
+    FlatList
   } from 'react-native';
  
  class AForm extends Component {
@@ -25,6 +26,14 @@ import {
          this.state = { chosenDate: new Date() };
     
          this.setDate = this.setDate.bind(this);
+         items = [{
+             key:1,
+             item:'cake'
+         },
+        {
+            key:2,
+            item:'Pastry'
+        }]
      }
 
      
@@ -49,6 +58,10 @@ import {
             <ProgressViewIOS style={styles.progressView} progress={0.98}/>
             <DatePickerIOS date={this.state.chosenDate}
           onDateChange={this.setDate}/>
+          <FlatList
+  data={[{key: 'a'}, {key: 'b'}]}
+  renderItem={({item}) => <Text>{item.key}</Text>}
+/>
 
     </View>
 
